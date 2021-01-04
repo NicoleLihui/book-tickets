@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movieticket</title>
+    <link rel="stylesheet" href="movieticket.css" />
+</head>
+<body>
+    <header>
+        <h2>欢迎来到米修电影院</h2>
+    </header>
+    <article>
+        <span>选择影片：</span>
+        <select id="movies" class="movies">
+            <option value="66">喜剧之王(票价: 66元)</option>
+            <option value="56">黑客帝国(票价: 56元)</option>
+            <option value="69">肖申克的救赎(票价: 69元)</option>
+            <option value="45">摔跤吧, 爸爸(票价: 45元)</option>
+        </select>
+        <ul class="showcase">
+            <li>
+                <div class="seat"></div>
+                <small>可选</small>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <small>已选</small>
+            </li><li>
+                <div class="seat occupied"></div>
+                <small>不可选</small>
+            </li>
+        </ul>
+
+        <div class="seat-container">
+            <div class="screen"></div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <p class="text">您已经选择了： <span class="seat-count">0</span>个座位， 总计票价为： <span class="totalPrice">0</span>元</p>
+    </footer>
+    <script src="movieticket.js"></script>
+</body>
+</html>
